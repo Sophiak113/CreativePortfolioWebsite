@@ -1,10 +1,12 @@
 
 import './App.css';
-import
 
 function App() {
   return (
-    <div className='App' background>
+    <div style={{backgroundImage:"url(/SpaceBackground.png)",
+    backgroundRepeat:"no-repeat",
+    backgroundSize: "cover"}}>
+      Hello world
     </div>
   );
 }
