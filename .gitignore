@@ -1,0 +1,9 @@
+
+my-space-portfolio/node_modules/.bin/acorn
+*.cmd
+*.ps1
+my-space-portfolio/node_modules/.bin/ansi-html
+my-space-portfolio/node_modules/.bin/autoprefixer
+my-space-portfolio/node_modules/.bin/browserslist
+my-space-portfolio/node_modules/.bin/css-blank-pseudo
+my-space-portfolio/node_modules/.cache/default-development/7.pack
