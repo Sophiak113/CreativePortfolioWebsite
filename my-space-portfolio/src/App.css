@@ -1,0 +1,3 @@
+.planets:hover{
+    filter: grayscale();
+}
