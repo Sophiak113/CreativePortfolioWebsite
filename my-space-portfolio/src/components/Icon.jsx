@@ -15,7 +15,7 @@ const Icon = (props) => {
     return (
     <div>
 
-      <img classname='planets' src={props.src} alt={props.alt} style={{width: isHovering ? '20%':'10%', height: isHovering ? '20%':'10%'}}
+      <img className='planets' src={props.src} alt={props.alt} style={{width: isHovering ? '20%':'10%', height: isHovering ? '20%':'10%'}}
       position={props.position} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
     </div>
   )
