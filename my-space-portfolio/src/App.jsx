@@ -3,23 +3,19 @@ import Background from "./components/Background";
 
 function App() {
   return (
-    <div
-    //  style={{
-      // Below puts a backgroundimage for app will appear behind all components
-    //   backgroundImage:"url(/SpaceBackground.png)",
-    // backgroundRepeat:"no-repeat",
-    // backgroundSize: "cover",
-    // margin:"0px"}}
-    >
+    <div className="main-container">
+      
       <Background src="/SpaceBackground.png" alt="Space background"/> 
-      {/* Would like to change the background to a video later on */}
+      {/* video background */}
+      <div className="planet-wrapper">
     <Icon src = "/PinkSolarSystem.png" alt="Pink solar system"
-    position={{}}/> 
+    position={{}} heading = "Intro"/> 
     {/* Left position tag empty, just adding images before deciding where they'll go */}
     <Icon src = "/PurpleSolarSystem.png" alt="Purple solar system"
-    position={{}}/> 
+    position={{}} heading = "Projects"/> 
     <Icon src = "/GreenSolarSystem.png" alt="Green solar system"
-    position={{}}/> 
+    position={{}}heading = "Contact Me"/> 
+    </div>
     </div>
   );
 }

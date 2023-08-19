@@ -2,7 +2,10 @@
     margin: 0 !important;
     padding: 0 !important;
 }
-
+h1{
+    color: white;
+    text-align: center;
+}
 .background{
     /** Simulationg background-size: cover */
   object-fit: cover;
@@ -20,9 +23,6 @@
   be relative to this element */
   position: relative;
 
-  width: 400px;
-  height: 200px;
-
   /* Will not allow the video to overflow the 
   container */
   overflow: hidden;
@@ -35,3 +35,16 @@
   justify-content: center;
 
 }
+
+.planet{
+    object-fit: contain;
+}
+
+.planet-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+}
+
