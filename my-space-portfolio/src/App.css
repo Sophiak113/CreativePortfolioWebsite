@@ -67,16 +67,29 @@ html,body{
     
 }
 
+@keyframes glow{
+    /* from is beginning 0% and to is end 100% animation complete
+    or you can also use percent and have as many style changes as you'd like */
+0% {box-shadow:0 0 7px 1px white;}
+50%{box-shadow:0 0 13px 3px white;}
+}
+
 .title-wrapper{
-    border: 1px outset white;
+    border: 0px outset white;
     width: auto;
     border-radius: 30px;
     color: white;
     font-size: 50px;
     text-align: center;
-    box-shadow:0 0 7px 1px white;
+    box-shadow:0 0 7px 1px white;  
     /* in order: x offset, y offset, blur size, spread size, color */
   /* blur size and spread size are optional (they default to 0) */
+  /* you can stack box shadows by putting a , then writing another line */
+  animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
 
 }
 
