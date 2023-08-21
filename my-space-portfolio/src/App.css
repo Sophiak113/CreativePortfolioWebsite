@@ -3,11 +3,11 @@
     padding: 0 !important;
 }
 h1{
-    color: white;
+    color: gray;
     text-align: center;
 }
 p{
-    color: white;
+    color: gray;
 
 }
 .background{
@@ -52,14 +52,16 @@ p{
     object-fit: cover;
 }
 
-.main-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+html,body{
+    scroll-snap-type:y mandatory;
+    /* change the above to y proximity if scroll snapping is too jarring */
 }
+
 .container{
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
+
     
 }
 

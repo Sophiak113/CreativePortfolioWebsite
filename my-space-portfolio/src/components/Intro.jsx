@@ -1,10 +1,10 @@
 import React from 'react'
+import TitleBar from './TitleBar'
 
 const Intro = () => {
   return (
-    <div className='intro-container' style={{backgroundColor:'black'}}>
-
-      <h1>Intro</h1>
+    <div className='intro-container'>
+<TitleBar page = "Intro"></TitleBar>
       <p>Sophia Kinsey is a budding software engineer.
 I have always had an interest in tech since I was
 young, 90% of my childhood photos showcase
