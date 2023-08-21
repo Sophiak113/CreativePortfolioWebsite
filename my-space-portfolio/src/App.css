@@ -6,6 +6,10 @@ h1{
     color: white;
     text-align: center;
 }
+p{
+    color: white;
+
+}
 .background{
     /** Simulationg background-size: cover */
   object-fit: cover;
@@ -46,5 +50,16 @@ h1{
     justify-content: space-around;
     align-items: center;
     object-fit: cover;
+}
+
+.main-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    
 }
 

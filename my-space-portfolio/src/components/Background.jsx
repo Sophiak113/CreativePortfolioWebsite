@@ -4,7 +4,7 @@ const Background = (props) => {
   return (
     <div className='background wrapper'>
       <video  className="background" width="100%" height="100%" loop autoPlay muted>
-  <source src="/Spacevideo.mp4" type="video/mp4"/>
+  <source src="/Spacevideo.mp4" type="video/mp4" />
  </video>
  
 
