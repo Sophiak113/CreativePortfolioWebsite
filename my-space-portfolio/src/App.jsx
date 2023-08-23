@@ -29,7 +29,7 @@ function App() {
         </div>
       {/* making containers that can be scroll snapped to */}
     <div className="container"> 
-      <Intro />
+        <Intro />
     </div>
     <div className="container">
       <Projects/>

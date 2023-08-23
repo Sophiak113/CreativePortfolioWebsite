@@ -8,7 +8,8 @@ h1{
     text-align: center;
 }
 p{
-    color: gray;
+    color: white;
+    font-size: 28px;
 
 }
 .background{
@@ -42,10 +43,12 @@ p{
 }
 
 .planet{
+    /* stops the planet images being distorted */
     object-fit: contain;
 }
 
 .planet-wrapper{
+    /* centering the planets in a line in the centre of a page */
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -59,33 +62,37 @@ html,body{
 }
 
 .container{
+    /* splits the website into viewport height sections that can be scroll snapped to */
     height: 100vh;
     width: 100%;
     scroll-snap-align: center;
-    background-color: black;
-    /* get rid of the above background colour to see the video background again */
     
 }
 
 @keyframes glow{
     /* from is beginning 0% and to is end 100% animation complete
     or you can also use percent and have as many style changes as you'd like */
-0% {box-shadow:0 0 7px 1px white;}
-50%{box-shadow:0 0 13px 3px white;}
+0% {box-shadow:0 0 7px 1px white,inset 0px 0 10px 1px rgb(88, 9, 100);}
+100%{box-shadow:0 0 15px 3px white;}
 }
 
-.title-wrapper{
-    border: 0px outset white;
-    width: auto;
-    border-radius: 30px;
+.title{
+    text-align: center;
+    width: fit-content;
+    /* border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px; */
+    border-radius: 15px;
     color: white;
     font-size: 50px;
-    text-align: center;
-    box-shadow:0 0 7px 1px white;  
+
+    /* box-shadow:0 0 7px 1px white,
+    inset 0 0 30px 1px rebeccapurple
+    ;  
     /* in order: x offset, y offset, blur size, spread size, color */
   /* blur size and spread size are optional (they default to 0) */
-  /* you can stack box shadows by putting a , then writing another line */
-  animation-name: glow;
+  /* you can stack box shadows by putting a , then writing another line */ 
+
+    animation-name: glow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -93,3 +100,45 @@ html,body{
 
 }
 
+.intro-container{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(2, 0, 24), rgb(4, 0, 47), rgb(2, 0, 24));
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  grid-auto-rows: repeat(5,1fr);
+  text-align: center;
+}
+
+.section{
+    width: fit-content;
+    height: fit-content;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+
+}
+#intro1{
+    grid-column:2;
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#intro2{
+    grid-column:2;
+    grid-row:3;
+    
+}
+#intro3{
+    grid-column:2;
+    grid-row:4;
+}
+#intro4{
+    grid-column:2;
+    grid-row:5;
+}
