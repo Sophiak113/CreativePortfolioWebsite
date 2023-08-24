@@ -7,9 +7,6 @@ import TitleBar from "./components/TitleBar";
 import IntroPg2 from "./components/IntroPg2";
 
 function App() {
-  const handleSelectedIcon = (currentHeading) =>{
-    console.log(currentHeading)
-  }
   return (
     <div className="main-container">
     
@@ -20,7 +17,7 @@ function App() {
           <div className="planet-wrapper">
             {/* Could I create icons as a list as they repeat? */}
               <Icon src = "/PinkSolarSystem.png" alt="Pink solar system"
-              position={{}} heading = "Intro" onSelectIcon={handleSelectedIcon()}/>
+              position={{}} heading = "Intro"/>
               {/* Left position tag empty, just adding images before deciding where they'll go */}
               <Icon src = "/PurpleSolarSystem.png" alt="Purple solar system"
               position={{}} heading = "Projects"/>
