@@ -1,0 +1,158 @@
+* {    
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: gray;
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: 28px;
+
+}
+.background{
+    /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.video-wrapper{
+    /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.planet{
+    /* stops the planet images being distorted */
+    object-fit: contain;
+}
+
+.planet-wrapper{
+    /* centering the planets in a line in the centre of a page */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+html,body{
+    scroll-snap-type:y mandatory;
+    /* change the above to y proximity if scroll snapping is too jarring */
+}
+
+.container{
+    /* splits the website into viewport height sections that can be scroll snapped to */
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    
+}
+
+@keyframes glow{
+    /* from is beginning 0% and to is end 100% animation complete
+    or you can also use percent and have as many style changes as you'd like */
+0% {box-shadow:0 0 7px 1px white,inset 0px 0 10px 1px rgb(88, 9, 100);}
+100%{box-shadow:0 0 15px 3px white;}
+}
+
+.title{
+    text-align: center;
+    width: fit-content;
+    /* border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px; */
+    border-radius: 15px;
+    color: white;
+    font-size: 50px;
+
+    /* box-shadow:0 0 7px 1px white,
+    inset 0 0 30px 1px rebeccapurple
+    ;  
+    /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+  /* you can stack box shadows by putting a , then writing another line */ 
+
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+
+}
+
+.intro-container{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(2, 0, 24), rgb(4, 0, 47), rgb(2, 0, 24));
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1;
+  text-align: center;
+}
+
+.intro-container2{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(2, 0, 24), rgb(4, 0, 47), rgb(2, 0, 24));
+    display: grid;
+}
+
+.section{
+    width: fit-content;
+    height: fit-content;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    margin: 10px;
+
+}
+
+.intro-container > *{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Positioning the items in intro-container2 */
+
+.rightArrow{
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+    
+  }
+.leftArrow{
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-right: 60px solid green;
+  }
