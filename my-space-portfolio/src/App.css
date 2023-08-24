@@ -54,6 +54,7 @@ p{
     justify-content: space-around;
     align-items: center;
     object-fit: cover;
+    scroll-snap-align: center;
 }
 
 html,body{
@@ -110,6 +111,12 @@ html,body{
   text-align: center;
 }
 
+.intro-container2{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(2, 0, 24), rgb(4, 0, 47), rgb(2, 0, 24));
+    display: grid;
+}
+
 .section{
     width: fit-content;
     height: fit-content;
@@ -142,3 +149,23 @@ html,body{
     grid-column:2;
     grid-row:5;
 }
+
+/* Positioning the items in intro-container2 */
+
+.rightArrow{
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+    
+  }
+.leftArrow{
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-right: 60px solid green;
+  }

@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import TitleBar from "./components/TitleBar";
+import IntroPg2 from "./components/IntroPg2";
 
 function App() {
   const handleSelectedIcon = (currentHeading) =>{
@@ -30,6 +31,9 @@ function App() {
       {/* making containers that can be scroll snapped to */}
     <div className="container"> 
         <Intro />
+    </div>
+    <div className="container">
+      <IntroPg2 />
     </div>
     <div className="container">
       <Projects/>
